@@ -2,17 +2,32 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8"/>
-		<meta name="author" content="Maycon e João Victor"/>
+		<meta name="author" content="Maycon e Marcus"/>
 		<title>Nice Games</title>
 		<link rel="stylesheet" type="text/css" href="Estilo.css">
 		<link rel="shortcut icon" href="Nice Games.png" type="image/x-icon">
+		<script language="JavaScript">
+
+			function abreMenu() 
+			{
+			  document.getElementById("menu-lateral").style.width = "27%";
+			  document.getElementById("games").style.marginLeft = "27%";
+			  document.getElementById("botao-hamburg").style.color = "#3e09de";
+			}
+			
+			function fechaMenu()
+			{
+			  document.getElementById("menu-lateral").style.width = "0%";
+			  document.getElementById("games").style.marginLeft= "0%";
+			  document.getElementById("botao-hamburg").style.color = "#ffffff";
+			  
+			}
+		</script>
 	</head>
 	
 	<body>
-	
-		<header>
-			<nav id="menu">
-				<img src="Nice Games.png"/>
+		<header id="menu">
+			<nav>
 				<ul>
 					<li><a href="#game1"><h5>Grand Theft Auto V</h5></a></li>
 					<li><a href="#game2"><h5>Fortnite</h5></a></li>
@@ -24,12 +39,25 @@
 			</nav>
 		</header>
 		
+		<aside id="menu-lateral">
+			<ul>
+				<li><a href="#game1"><h5>Grand Theft Auto V</h5></a></li>
+				<li><a href="#game2"><h5>Fortnite</h5></a></li>
+				<li><a href="#game3"><h5>God Of War</h5></a></li>
+				<li><a href="#game4"><h5>Minecraft</h5></a></li>
+				<li><a href="#game5"><h5>Destiny 2</h5></a></li>
+				<li><a href="#game6"><h5>The Last of Us 2</h5></a></li>
+				<br>
+				<li><a href="javascript:void(0)" class="closebtn" onClick="fechaMenu()">&larr;</a></li>
+			</ul>
+		</aside>
+
 		<span id="inicio"></span>
 		<span id="game1"></span>
 		<span id="game2"></span>
 		
 		<div id="games">
-		
+			<span id="botao-hamburg" onClick="abreMenu()">&#9776;</span>
 			<section id="gta5">
 				<img src="gta5.png"/>
 				<h1>Grand Theft Auto V</h1>
