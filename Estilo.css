@@ -73,8 +73,8 @@ header
 	cursor:pointer;
 	visibility:visible;
 	color: #ffffff;
-	top:1%;
-	right:0.3%
+	top:1vw;
+	right:1vw;
 }
 
 
@@ -90,13 +90,10 @@ header
 }
 section img
 {
-	width: 90%;
-	height: 50%;
-	/*box-shadow: 1px 1px 0px white, -1px -1px 0px white, 1px -1px 0px white, -1px 1px 0px white;
-	*/margin-right: 5%;
-	padding-left: 7vw;
+	width: 50%;
+	height: 30%;
 	margin-bottom: 2vw;
-
+	margin-left: 25%;
 }
 section
 {
@@ -104,8 +101,7 @@ section
 	border-width:3px;
 	border-style:solid;
 	border-radius:50px;
-	padding-left:2vw;
-	padding-right:2vw;
+	padding:3vw;
 	margin-top:3vw;
 	margin-left:5%;
 	width:90%;
@@ -114,13 +110,14 @@ section
 }
 
 
-h1
+section a h1
 {
 	text-align: center;
-	font-size: 6vw;
+	font-size: 5vw;
 	color: #3e09de;
 	text-shadow: -1px -1px 0px #FFF, -1px 1px 0px #FFF, 1px -1px 0px #FFF, 1px 0px 0px #FFF;
 	cursor: pointer;
+	margin-top: 2vw;
 }
 
 h1:hover
@@ -134,15 +131,25 @@ h2
 {
 	text-align: center;
 	color: white;
-	font-size: 4.5vw;
-	padding-top: 1vw;
+	font-size: 4vw;
+	padding-top: 0.5vw;
+	margin: 0;
+}
+
+p
+{
+	text-align: center;
+	font-size: 3vw;
+	color: #3e09de;
+	text-shadow: -1px -1px 0px #FFF, -1px 1px 0px #FFF, 1px -1px 0px #FFF, 1px 0px 0px #FFF;
 }
 
 h4
 {
 	text-align: justify;
-	font-size:3.2vw;
+	font-size:3vw;
 	color: white;
+	margin-bottom: 3.5vw;
 }
 #gta5
 {
@@ -226,10 +233,10 @@ footer h3
 #botao
 {
 	position: fixed;
-	bottom: 10vw;
+	bottom: 8vw;
 	width: 6vw;
-	right: 0.3vw;
-	font-size:4vw;
+	right: 1vw;
+	font-size:5vw;
 	text-align: center;
 	cursor: pointer;
 	border-radius: 30px;
@@ -263,16 +270,16 @@ header
 {
 	visibility:visible;
 	background-color:rgba(255,128,0,0.7);
-	width:90%;
+	width:89%;
 	height: 5vw;
 	padding-right:2vw; 
 	padding-left:2vw; 
-	margin-left: 5%;
+	margin-left: 5.5%;
 	top:0px;
 	left:0px;
 	position:fixed;
 	text-align:center;
-	border-radius: 30px;
+	border-radius: 20px;
 	border:2px solid;
 	box-shadow: 1px 1px 0px #FFFFFF, -1px -1px 0px #FFFFFF, 1px -1px 0px #FFFFFF, -1px 1px 0px #FFFFFF;
 }
@@ -298,7 +305,7 @@ header li a h5
 	text-shadow: -1px -1px 0px #ffffff, -1px 1px 0px #ffffff, 1px -1px 0px #ffffff, 1px 0px 0px #ffffff;
 	cursor: pointer;
 	font-family:Impact, fantasy;
-	font-size: 2vw;
+	font-size: 1.8vw;
 }
 header li a h5:hover
 {
@@ -309,7 +316,7 @@ header li a h5:hover
 
 #games
 {
-	padding-top: 10%;
+	padding-top: 4%;
 }
 
 section
@@ -318,8 +325,8 @@ section
 	border-width:3px;
 	border-style:solid;
 	border-radius:50px;
-	padding-left:1vw;
-	padding-right:1vw;
+	padding-left:2vw;
+	padding-right:2vw;
 	margin-top:3vw;
 	margin-left:5%;
 	width:90%;
@@ -329,40 +336,48 @@ section
 section img
 {
 	float: right;
-	width: 25vw;
-	height: 15vw;
+	width: 25%;
 	right: 0;
 	top: 0;
-	margin-top: -2vw;
-	padding-right: 3vw;
-	padding-bottom: 1%;
+	padding:0;
+	margin: 0 5% 0 0;
 }
 
 section a h1
 {
 	text-align: left;
 	font-size: 3vw;
-	width:60vw;
-	margin-top:2vw;
-	margin-left:2vw;
+	width:60%;
+	margin:2vw 0 0 0;
+	padding: 0;
 }
 
 h2
 {
 	text-align: left;
 	font-size: 2.2vw;
-	width:60vw;
-	margin-left:2vw;
+	width:60%;
+	margin:1vw 0;
+	padding: 0;
+}
+
+p
+{
+	text-align: left;
+	font-size: 2.2vw;
+	width:60%;
+	margin:0;
+	padding: 0;
 }
 
 h4
 {
 	text-align: justify;
-	font-size:1.5vw;
-	width:60vw;
+	font-size:1.6vw;
+	width:60%;
 	color: white;
-	margin-bottom:2vw;
-	margin-left:2vw;
+	margin-bottom:2vw 0 0 0;
+	padding: 0;
 }
 
 footer
@@ -370,8 +385,8 @@ footer
 	background-color:rgba(255,128,0,0.7);
 	text-align:center;
 	font-family:OCR A Std, monospace;
-	width:70%;
-	margin-left: 15%;
+	width:90%;
+	margin-left: 5%;
 	padding: 0px;
 	border-style:solid;
 	border-width:2px;
@@ -381,7 +396,7 @@ footer
 
 footer h3
 {
-	font-size: 3vw;
+	font-size: 2.7vw;
 	margin-top:0.2vw;	
 	margin-bottom: 0.5vw;
 	color: #ffffff;
@@ -398,8 +413,8 @@ footer h3
 
 #rodape img
 {
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	box-shadow: 2px 2px 3px #FFFFFF;
 }
 
@@ -415,7 +430,7 @@ footer h3
 	vertical-align : middle;
 	text-align:center;
 	margin: 1vw 2vw;
-	height:3vw;
+	height:2vw;
 }
 
 #botao
@@ -446,16 +461,4 @@ footer h3
 	transition: 0.2s;
 }
 
-}
-@media only screen and (max-width:699px)
-{
-	header
-	{
-		visibility:hidden;
-	}
-
-	#botao-hamburg
-	{
-		visibility:visible;
-	}
 }
